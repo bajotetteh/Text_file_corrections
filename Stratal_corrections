@@ -1,0 +1,68 @@
+import os
+
+# Text to be included in the HTML files
+html_text = """
+<!DOCTYPE html>
+<html>
+<head>
+<title>Page Title</title>
+</head>
+<body>
+<p>Unfortunately we are unable to recommend an antidepressant without a thorough understanding of your medical history. If there is any additional medical information you have not shared yet, please provide it so we can offer a more informed recommendation for an antidepressant</p>
+</body>
+</html>
+"""
+
+# Directories where the files will be saved
+bar_10_corrections_path = 'C:\\Users\\Bajo\\OneDrive\\Desktop\\GMU GRA Project\\RAG_for_16770_database\\bar_10_corrections'
+bar_text_10_corrections_path = 'C:\\Users\\Bajo\\OneDrive\\Desktop\\GMU GRA Project\\RAG_for_16770_database\\bar_text_10_corrections'
+piefiles_9_processed_corrections_path = 'C:\\Users\\Bajo\\OneDrive\\Desktop\\GMU GRA Project\\RAG_for_16770_database\\piefiles_9_processed_corrections'
+
+
+# Function to create HTML files in the specified directory
+def create_html_files(file_name, directory):
+    full_path = os.path.join(directory, file_name)
+    with open(full_path, 'w') as file:
+           file.write(html_text)
+    print(f"File created: {full_path}")
+
+# Function to create an empty HTML file
+def create_empty_html_file(file_name, directory):
+    full_path = os.path.join(directory, file_name)
+    with open(full_path, 'w') as file:
+        file.write("")  # Writing an empty string for an empty file
+    print(f"Empty file created: {full_path}")
+
+# Create files with the specified prefixes
+create_html_files("StratalD1.html", piefiles_9_processed_corrections_path)
+create_html_files("StratalD2.html", piefiles_9_processed_corrections_path)
+create_html_files("StratalD3.html", piefiles_9_processed_corrections_path)
+create_html_files("StratalD4.html", piefiles_9_processed_corrections_path)
+create_html_files("StratalD5.html", piefiles_9_processed_corrections_path)
+create_html_files("StratalD6.html", piefiles_9_processed_corrections_path)
+create_html_files("StratalD7.html", piefiles_9_processed_corrections_path)
+create_html_files("StratalD8.html", piefiles_9_processed_corrections_path)
+create_html_files("StratalD9.html", piefiles_9_processed_corrections_path)
+create_html_files("StratalD10.html", piefiles_9_processed_corrections_path)
+
+create_html_files("barstratalD1.html", bar_10_corrections_path)
+create_html_files("barstratalD2.html", bar_10_corrections_path)
+create_html_files("barstratalD3.html", bar_10_corrections_path)
+create_html_files("barstratalD4.html", bar_10_corrections_path)
+create_html_files("barstratalD5.html", bar_10_corrections_path)
+create_html_files("barstratalD6.html", bar_10_corrections_path)
+create_html_files("barstratalD7.html", bar_10_corrections_path)
+create_html_files("barstratalD8.html", bar_10_corrections_path)
+create_html_files("barstratalD9.html", bar_10_corrections_path)
+create_html_files("barstratalD10.html", bar_10_corrections_path)
+
+create_empty_html_file("barstratalD1.html", bar_text_10_corrections_path)
+create_empty_html_file("barstratalD2.html", bar_text_10_corrections_path)
+create_empty_html_file("barstratalD3.html", bar_text_10_corrections_path)
+create_empty_html_file("barstratalD4.html", bar_text_10_corrections_path)
+create_empty_html_file("barstratalD5.html", bar_text_10_corrections_path)
+create_empty_html_file("barstratalD6.html", bar_text_10_corrections_path)
+create_empty_html_file("barstratalD7.html", bar_text_10_corrections_path)
+create_empty_html_file("barstratalD8.html", bar_text_10_corrections_path)
+create_empty_html_file("barstratalD9.html", bar_text_10_corrections_path)
+create_empty_html_file("barstratalD10.html", bar_text_10_corrections_path)
